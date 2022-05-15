@@ -92,16 +92,16 @@ export default function Icon({ size = 70 }) {
                     fill="#FFC24A"
                 ></path>
                 <g>
-                    <use fill="#FFA712" fill-rule="evenodd"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-2)"></use>
+                    <use fill="#FFA712" fillRule="evenodd"></use>
+                    <use fill="black" fillOpacity="1" filter="url(#filter-2)"></use>
                 </g>
                 <path
                     d="M135.004975,150.380704 L167.960199,116.629461 L134.995423,53.6993114 C131.866109,47.7425353 123.128817,47.7253411 120.032618,53.6993112 L102.421015,87.2880848 L102.421015,90.1487443 L135.004975,150.380704 Z"
                     fill="#F4BD62"
                 ></path>
                 <g>
-                    <use fill="#FFA50E" fill-rule="evenodd"></use>
-                    <use fill="black" fill-opacity="1" filter="url(#filter-4)"></use>
+                    <use fill="#FFA50E" fillRule="evenodd"></use>
+                    <use fill="black" fillOpacity="1" filter="url(#filter-4)"></use>
                 </g>
                 <polygon
                     fill="#F6820C"

@@ -14,7 +14,7 @@ export default function Icon({ size = 70 }) {
             <rect width="512" height="512" rx="15%" fill="#f58025" />
             <path
                 stroke="#fff"
-                stroke-width="30"
+                strokeWidth="30"
                 fill="none"
                 d="M293 89l90 120zm-53 50l115 97zm-41 65l136 64zm-23 69l148 31zm-6 68h150zm-45-44v105h241V297"
             />

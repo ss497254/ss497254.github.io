@@ -17,13 +17,13 @@ const Projects = () => {
                         {experience.map((data, index) => {
                             if (data === 'last') return <div />;
                             return (
-                                <div class="vtimeline-point" key={index}>
-                                    <div class="vtimeline-icon d-flex justify-content-center flex-column align-items-center">
+                                <div className="vtimeline-point" key={index}>
+                                    <div className="vtimeline-icon d-flex justify-content-center flex-column align-items-center">
                                         <Location size={35} />
                                     </div>
-                                    <div class="vtimeline-block">
-                                        <span class="vtimeline-date">{data.timePeriod}</span>
-                                        <div class="vtimeline-content">
+                                    <div className="vtimeline-block">
+                                        <span className="vtimeline-date">{data.timePeriod}</span>
+                                        <div className="vtimeline-content">
                                             <h3>{data.employerName}</h3>
                                             <h4>{data.jobTitle}</h4>
                                             <p>{data.content}</p>

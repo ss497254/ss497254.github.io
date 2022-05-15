@@ -19,16 +19,16 @@ const Header = ({}) => {
                     distance="30px"
                 >
                     <div id="Clouds">
-                        {/* <div class="Cloud Foreground"></div> */}
-                        <div class="Cloud Background"></div>
-                        {/* <div class="Cloud Foreground"></div> */}
-                        <div class="Cloud Background"></div>
-                        {/* <div class="Cloud Foreground"></div> */}
-                        <div class="Cloud Background"></div>
-                        <div class="Cloud Background"></div>
-                        <div class="Cloud Foreground"></div>
-                        <div class="Cloud Background"></div>
-                        <div class="Cloud Background"></div>
+                        {/* <div className="Cloud Foreground"></div> */}
+                        <div className="Cloud Background"></div>
+                        {/* <div className="Cloud Foreground"></div> */}
+                        <div className="Cloud Background"></div>
+                        {/* <div className="Cloud Foreground"></div> */}
+                        <div className="Cloud Background"></div>
+                        <div className="Cloud Background"></div>
+                        <div className="Cloud Foreground"></div>
+                        <div className="Cloud Background"></div>
+                        <div className="Cloud Background"></div>
                     </div>
                     <h1 className="hero-title">
                         Hi{' '}

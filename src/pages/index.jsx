@@ -16,7 +16,6 @@ import { hero, about, skills, experience, projects, contact, footer } from '../m
 export default function Main() {
     const [isDesktop, setIsDesktop] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         if (window.innerWidth > 769) {
@@ -26,7 +25,7 @@ export default function Main() {
             setIsMobile(true);
             setIsDesktop(false);
         }
-        setIsLoading(false);
+        document.getElementById('loading')?.remove();
     }, []);
 
     return (
@@ -38,22 +37,20 @@ export default function Main() {
                 <meta name="description" content="Portfolio Website" />
                 <link rel="shortcut icon" href="favicon.png" />
             </Helmet>
-            {isLoading ? (
-                <div className="peeek-loading" id="loading">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-            ) : null}
+            <div className="peeek-loading" id="loading">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
             <Header />
             <PortfolioProvider
                 value={{

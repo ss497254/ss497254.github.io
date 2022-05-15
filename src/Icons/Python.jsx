@@ -18,8 +18,8 @@ export default function Icon({ size = 70 }) {
                     y2="78.2008538%"
                     id="linearGradient-1"
                 >
-                    <stop stop-color="#387EB8" offset="0%"></stop>
-                    <stop stop-color="#366994" offset="100%"></stop>
+                    <stop stopColor="#387EB8" offset="0%"></stop>
+                    <stop stopColor="#366994" offset="100%"></stop>
                 </linearGradient>
                 <linearGradient
                     x1="19.127525%"
@@ -28,8 +28,8 @@ export default function Icon({ size = 70 }) {
                     y2="88.4290372%"
                     id="linearGradient-2"
                 >
-                    <stop stop-color="#FFE052" offset="0%"></stop>
-                    <stop stop-color="#FFC331" offset="100%"></stop>
+                    <stop stopColor="#FFE052" offset="0%"></stop>
+                    <stop stopColor="#FFC331" offset="100%"></stop>
                 </linearGradient>
             </defs>
             <g>

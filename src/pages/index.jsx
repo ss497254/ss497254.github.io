@@ -53,32 +53,29 @@ export default function Main() {
                         <li></li>
                     </ul>
                 </div>
-            ) : (
-                <>
-                    <Header />
-                    <PortfolioProvider
-                        value={{
-                            hero,
-                            about,
-                            skills,
-                            experience,
-                            projects,
-                            contact,
-                            footer,
-                            isDesktop,
-                            isMobile,
-                        }}
-                    >
-                        <Hero />
-                        <About />
-                        <Skills />
-                        <Experience />
-                        <Projects />
-                        <Contact />
-                        <Footer />
-                    </PortfolioProvider>
-                </>
-            )}
+            ) : null}
+            <Header />
+            <PortfolioProvider
+                value={{
+                    hero,
+                    about,
+                    skills,
+                    experience,
+                    projects,
+                    contact,
+                    footer,
+                    isDesktop,
+                    isMobile,
+                }}
+            >
+                <Hero />
+                <About />
+                <Skills />
+                <Experience />
+                <Projects />
+                <Contact />
+                <Footer />
+            </PortfolioProvider>
         </>
     );
 }

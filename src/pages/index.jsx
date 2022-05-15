@@ -26,7 +26,7 @@ export default function Main() {
             setIsMobile(true);
             setIsDesktop(false);
         }
-        setTimeout(() => setIsLoading(false), 100);
+        setIsLoading(false);
     }, []);
 
     return (

@@ -1,0 +1,123 @@
+#experience {
+    background-image: linear-gradient(90deg, $secondary-color 0%, $primary-color 100%);
+    color: $white-color;
+    height: 100%;
+    border-top: 0px;
+    width: 100% !important;
+    padding-bottom: 50px;
+
+    @include respond(tab-land) {
+        height: 100%;
+    }
+}
+
+.experience-timeline {
+    position: relative;
+    max-width: 900px;
+}
+
+.experience-timeline:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    right: auto;
+    height: 100%;
+    width: 3px;
+    z-index: 0;
+    background-color: white;
+
+    @include respond(phone) {
+        left: 23px;
+    }
+}
+
+.experience-timeline:after {
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background: linear-gradient(to bottom, white 0%, $secondary-color 100%);
+    top: 100%;
+    left: 250px;
+    content: '';
+    @include respond(phone) {
+        left: 23px;
+    }
+}
+
+.vtimeline-point {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.vtimeline-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+    z-index: 99;
+    margin-left: 227px;
+    @include respond(phone) {
+        margin-left: 0;
+    }
+}
+
+.vtimeline-date {
+    width: 200px;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+
+    @include respond(phone) {
+        width: auto;
+        text-align: left;
+        position: relative;
+        margin-bottom: 25px;
+        display: block;
+        margin-left: 70px;
+    }
+}
+
+.vtimeline-block {
+    margin-top: 30px;
+}
+
+.vtimeline-content {
+    margin-left: 330px;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: left;
+    position: relative;
+    left: 0px;
+    top: 21px;
+    @include respond(phone) {
+        margin-left: 70px;
+        top: 0px;
+    }
+}
+
+.vtimeline-content h3 {
+    color: #374054;
+    display: inline-block;
+    margin: 0;
+}
+
+.vtimeline-content h4 {
+    color: $color-red;
+    margin: 10px 0;
+}
+
+.vtimeline-content p {
+    color: #535a5f;
+    margin: 0;
+}

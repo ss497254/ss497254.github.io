@@ -1,0 +1,91 @@
+$size: 2em;
+$dotCount: 10;
+$animationTime: 2.5s;
+
+.peeek-loading {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 9999;
+}
+.peeek-loading ul {
+    position: absolute;
+    left: calc(50% - 1em);
+    top: calc(50% - 6em);
+    display: inline-block;
+    text-indent: $size * 2;
+}
+.peeek-loading ul li:after,
+.peeek-loading ul:after {
+    width: $size;
+    height: $size;
+    background-color: $secondary-color;
+    border-radius: 100%;
+}
+.peeek-loading ul li:after,
+.peeek-loading ul:after {
+    content: '';
+    display: block;
+}
+.peeek-loading ul:after {
+    position: absolute;
+    top: $size * 2;
+    left: 0%;
+}
+.peeek-loading li {
+    position: absolute;
+    padding-bottom: $size * 4;
+    top: 0;
+    left: 0;
+    list-style: none;
+}
+
+// Creating Circle and Animation Delay
+@for $i from 1 through 10 {
+    .peeek-loading li:nth-child(#{$i}) {
+        $deg: ($i - 1) * (360deg / $dotCount);
+        transform: rotate($deg);
+        animation-delay: $animationTime * $i/$dotCount/2;
+    }
+    .peeek-loading li:nth-child(#{$i}):after {
+        animation-delay: $animationTime * $i/$dotCount/2;
+    }
+}
+
+// Animations
+.peeek-loading li {
+    animation: dotAnimation $animationTime infinite;
+}
+@keyframes dotAnimation {
+    0%,
+    55%,
+    100% {
+        padding: 0 0 $size * 4 0;
+    }
+    5%,
+    50% {
+        padding: $size * 2 0;
+    }
+}
+
+.peeek-loading li:after {
+    animation: dotAnimationTwo $animationTime infinite;
+}
+@-webkit-keyframes dotAnimationTwo {
+    0%,
+    55%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    5%,
+    50% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+}

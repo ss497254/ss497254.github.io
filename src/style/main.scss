@@ -4,6 +4,7 @@
 
 @import './base/base';
 @import './base/typography';
+@import './base/loading';
 
 @import './components/buttons';
 
@@ -12,23 +13,35 @@
 @import './layout/sections';
 
 @import './sections/about';
+@import './sections/skills';
+@import './sections/experience';
 @import './sections/contact';
 @import './sections/hero';
 @import './sections/projects';
 
-@import './vendor/css/font-awesome.min.css';
+.mx-auto {
+    margin: 0 auto;
+}
+
+.my-auto {
+    margin: auto 0;
+}
+
+button:focus {
+    outline: none;
+}
 
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+    width: 10px;
+    height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #292a2d;
+    background: #292a2d;
 }
 ::-webkit-scrollbar-thumb {
-  background: $secondary-color;
-  border-radius: 5px;
+    background: $secondary-color;
+    border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: $secondary-color;
+    background: $secondary-color;
 }

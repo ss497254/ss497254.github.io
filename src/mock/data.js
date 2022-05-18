@@ -28,7 +28,7 @@ import Instagram from '../Icons/Instagram';
 
 export const hero = {
     title: '',
-    subtitle: 'I am a Fullstack Developer and a Competitive Programmer',
+    subtitle: 'I am a Fullstack Web Developer and a Competitive Programmer',
     cta: '',
 };
 

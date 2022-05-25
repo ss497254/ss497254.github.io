@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Icon({ size = 70 }) {
+export default function Icon({ size = 80 }) {
     return (
         <div
             style={{ height: size, color: '#eb0da7', fontSize: size / 3 }}

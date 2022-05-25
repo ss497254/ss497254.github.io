@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Icon({ size = 70 }) {
+export default function Icon({ size = 80 }) {
     return (
         <svg
             version="1.1"
@@ -11,7 +11,7 @@ export default function Icon({ size = 70 }) {
             viewBox="0 0 300.003 300.003"
             width={size}
             height={size}
-            fill="var(--cyan)"
+            fill="#00a2ff"
         >
             <g>
                 <g>

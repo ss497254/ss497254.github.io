@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Icon({ size = 70 }) {
+export default function Icon({ size = 80 }) {
     return (
         <svg width={size} height={size} viewBox="0 0 257 257" xmlns="http://www.w3.org/2000/svg">
             <rect width="257" height="257" rx="128.5" fill="url(#logo)"></rect>

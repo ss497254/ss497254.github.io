@@ -27,7 +27,7 @@ const AboutImg = ({ filename, alt }) => (
             if (!image) return null;
 
             const imageFixed = image.node.childImageSharp.fixed;
-            return <Img className="border border-white shadow-lg" alt={alt} fixed={imageFixed} />;
+            return <Img alt={alt} fixed={imageFixed} />;
         }}
     />
 );

@@ -21,11 +21,11 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `ss497254 | Portfolio`,
+                name: `ss497254 | Saurabh Singh`,
                 short_name: `ss497254`,
                 start_url: `/`,
                 background_color: `#fff`,
-                theme_color: `#00b1ff`,
+                theme_color: `#0084ff`,
                 display: `standalone`,
                 icon: 'src/images/favicon.png',
             },

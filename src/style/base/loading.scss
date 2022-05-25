@@ -76,6 +76,7 @@ $animationTime: 2.5s;
 .peeek-loading li:after {
     animation: dotAnimationTwo $animationTime infinite;
 }
+
 @-webkit-keyframes dotAnimationTwo {
     0%,
     55%,

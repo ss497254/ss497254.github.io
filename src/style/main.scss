@@ -39,9 +39,9 @@ button:focus {
     background: #292a2d;
 }
 ::-webkit-scrollbar-thumb {
-    background: $secondary-color;
+    background: $primary-color;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: $secondary-color;
+    background: $primary-color;
 }

@@ -18,7 +18,7 @@ function Skills() {
                             (isMobile ? 'mx-5' : '')
                         }
                     >
-                        <Fade top duration={1000}>
+                        <Fade top duration={800}>
                             <p className="about-wrapper__info-text h2">{`These are the languages and framework that I use.`}</p>
                         </Fade>
                     </div>

@@ -5,7 +5,8 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../context/context';
 
 const Header = ({}) => {
-    const { hero, isDesktop, isMobile } = useContext(PortfolioContext);
+    const { hero, isDesktop, isMobile, footer } = useContext(PortfolioContext);
+    const { networks } = footer;
     const { title, subtitle } = hero;
 
     return (
@@ -15,20 +16,38 @@ const Header = ({}) => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={500}
+                    delay={200}
                     distance="30px"
                 >
                     <div id="Clouds">
-                        {/* <div className="Cloud Foreground"></div> */}
+                        <div className="Cloud Foreground"></div>
                         <div className="Cloud Background"></div>
-                        {/* <div className="Cloud Foreground"></div> */}
+                        <div className="Cloud Foreground"></div>
                         <div className="Cloud Background"></div>
-                        {/* <div className="Cloud Foreground"></div> */}
+                        <div className="Cloud Foreground"></div>
                         <div className="Cloud Background"></div>
                         <div className="Cloud Background"></div>
                         <div className="Cloud Foreground"></div>
                         <div className="Cloud Background"></div>
                         <div className="Cloud Background"></div>
+                        <div className="hero__social-links">
+                            {networks &&
+                                networks.map((network) => {
+                                    const { id, name, url, icon } = network;
+                                    return (
+                                        <a
+                                            key={id}
+                                            href={url || '#'}
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                            aria-label={name}
+                                            style={{ borderRadius: '50%' }}
+                                        >
+                                            {icon}
+                                        </a>
+                                    );
+                                })}
+                        </div>
                     </div>
                     <h1 className="hero-title">
                         Hi{' '}
@@ -47,7 +66,7 @@ const Header = ({}) => {
                     left={isDesktop}
                     bottom={isMobile}
                     duration={1000}
-                    delay={1000}
+                    delay={400}
                     distance="30px"
                 >
                     <p className="hero-cta">

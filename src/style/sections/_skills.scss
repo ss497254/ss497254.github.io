@@ -4,15 +4,21 @@
 }
 
 .skill-wrapper {
-    border-style: solid;
-    border-radius: 5px;
-    border-color: #555;
-    height: 154px;
+    border-radius: 6px;
+    border: solid 1.5px #555;
+    position: relative;
+    height: 165px;
     width: 250px;
-    box-shadow: 0 1rem 2rem rgba(110, 110, 110, 0.175) !important;
+    box-shadow: 0 0.6rem 2.5rem rgba(110, 110, 110, 0.507) !important;
+    transition: 400ms;
+
     &:hover {
-        box-shadow: 0 0.6rem 2.5rem rgba(110, 110, 110, 0.507) !important;
+        box-shadow: 0 1rem 2rem rgba(110, 110, 110, 0.175) !important;
         transition: 400ms;
+    }
+
+    @include respond(phone) {
+        border: solid 1.1px #555;
     }
 }
 
@@ -25,7 +31,7 @@
     padding: 10px 20px;
     font-size: 2.5rem;
     height: 60px;
-    border-top: solid 2px #555;
     background-color: rgb(2, 147, 243);
+    border-radius: 0 0 4.5px 4.5px;
     color: white;
 }

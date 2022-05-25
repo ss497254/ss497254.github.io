@@ -18,12 +18,14 @@ const About = () => {
                         <Fade
                             right={isDesktop}
                             bottom={isMobile}
-                            duration={1500}
-                            delay={600}
+                            duration={1200}
+                            delay={400}
                             distance="30px"
                         >
                             <div className="about-wrapper__image">
-                                <AboutImg alt="profile picture" filename={img} />
+                                <div className="about-wrapper__image-shadow">
+                                    <AboutImg alt="profile picture" filename={img} />
+                                </div>
                             </div>
                         </Fade>
                     </Col>
@@ -31,11 +33,11 @@ const About = () => {
                         <Fade
                             left={isDesktop}
                             bottom={isMobile}
-                            duration={1500}
-                            delay={600}
+                            duration={1200}
+                            delay={400}
                             distance="30px"
                         >
-                            <div className={'about-wrapper__info ' + (isMobile ? 'mx-5' : '')}>
+                            <div className={'about-wrapper__info ' + (isMobile ? 'mx-2' : '')}>
                                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
                                 <p className="about-wrapper__info-text">{paragraphThree}</p>

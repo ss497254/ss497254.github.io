@@ -2,7 +2,13 @@ import React from 'react';
 
 export default function Icon({ size }) {
     return (
-        <svg width={size} height={size} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            width={size}
+            height={size}
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{ backgroundColor: '#222' }}
+        >
             <g>
                 <path fill="#00b3ff" d="M0 0h24v24H0z" />
                 <path

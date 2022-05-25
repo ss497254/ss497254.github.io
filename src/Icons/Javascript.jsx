@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Icon({ size = 70 }) {
+export default function Icon({ size = 80 }) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"

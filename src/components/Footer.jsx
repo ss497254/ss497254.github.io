@@ -27,10 +27,7 @@ const Footer = () => {
                                     rel="noopener noreferrer"
                                     target="_blank"
                                     aria-label={name}
-                                    style={{
-                                        // backgroundColor: '#00cdac',
-                                        borderRadius: '50%',
-                                    }}
+                                    style={{ borderRadius: '50%' }}
                                 >
                                     {icon}
                                 </a>

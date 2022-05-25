@@ -5,7 +5,7 @@ import PortfolioContext from '../context/context';
 import Title from './Title';
 import Location from '../Icons/Location';
 
-const Projects = () => {
+const Experience = () => {
     const { experience } = useContext(PortfolioContext);
 
     return (
@@ -13,9 +13,10 @@ const Projects = () => {
             <Container className="mb-5 pb-5">
                 <Title title="Experience" />
                 <div className="experience-timeline mx-auto">
-                    <Fade bottom duration={1500} delay={300}>
+                    <Fade bottom duration={1000} distance="120px">
                         {experience.map((data, index) => {
-                            if (data === 'last') return <div />;
+                            if (data === 'last') return <div key={index} />;
+
                             return (
                                 <div className="vtimeline-point" key={index}>
                                     <div className="vtimeline-icon d-flex justify-content-center flex-column align-items-center">
@@ -39,4 +40,4 @@ const Projects = () => {
     );
 };
 
-export default Projects;
+export default Experience;

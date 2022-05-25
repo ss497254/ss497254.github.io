@@ -5,7 +5,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../context/context';
 import Title from './Title';
 import ProjectImg from './Image/ProjectImg';
-// import SolidGitHub from '../Icons/SolidGitHub';
 
 const Projects = () => {
     const { projects, isDesktop, isMobile } = useContext(PortfolioContext);
@@ -34,11 +33,11 @@ const Projects = () => {
                                             </h2>
                                             <div>
                                                 <p className="text-justify">{info}</p>
-                                                <p className="mb-4">{info2 || ''}</p>
+                                                <p className="mb-4 text-justify">{info2 || ''}</p>
                                             </div>
                                             <div className="my-5">
                                                 {tags.map((tag) => (
-                                                    <div className="cta-btn cta-btn--tags m-2">
+                                                    <div className="cta-btn cta-btn--tags m-2 font-weight-bold">
                                                         {tag}
                                                     </div>
                                                 ))}
@@ -69,12 +68,12 @@ const Projects = () => {
                                         right={isDesktop}
                                         bottom={isMobile}
                                         duration={1000}
-                                        delay={1000}
+                                        delay={300}
                                         distance="30px"
                                     >
                                         <div className="project-wrapper__image">
                                             <a
-                                                href={url || '#!'}
+                                                href={url || '#'}
                                                 target="_blank"
                                                 aria-label="Project Link"
                                                 rel="noopener noreferrer"

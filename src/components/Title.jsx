@@ -18,7 +18,7 @@ const Line = ({ className, color, otherProps }) => (
 const Title = ({ title, color = 'white' }) => {
     const { isDesktop } = React.useContext(PortfolioContext);
     return (
-        <Fade left duration={1000} delay={300} distance="250px">
+        <Fade left duration={1000} distance="250px">
             <div className="d-flex justify-content-center title-wrapper">
                 <div className="section-title">{title}</div>
                 {isDesktop ? (

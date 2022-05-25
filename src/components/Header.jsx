@@ -16,7 +16,7 @@ const Header = () => {
     };
 
     function changeBackground() {
-        if (window.scrollY < 500) {
+        if (window.scrollY < 400) {
             setisScrolled(false);
         } else {
             setisScrolled(true);
@@ -37,7 +37,7 @@ const Header = () => {
             className={`header-nav${isScrolled ? '-scrolled' : ' '} light`}
             fixed="top"
             collapseOnSelect
-            style={{ backgroundColor: isScrolled ? (isCollapsed ? '#00b3ff' : '') : 'white' }}
+            style={{ backgroundColor: isScrolled ? (isCollapsed ? '#00a2ff' : '') : 'white' }}
             expand="xl"
         >
             <Fade>

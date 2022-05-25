@@ -3,17 +3,16 @@
     color: $white-color;
     height: 100%;
     border-top: 0px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     padding-bottom: 12%;
     padding-top: 6%;
-    // padding-top: 0px !important;
     width: 100% !important;
 
     @include respond(tab-land) {
         height: 100%;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     }
 
     .about-wrapper {
@@ -33,6 +32,18 @@
             @include respond(tab-land) {
                 height: 100%;
             }
+
+            &-shadow {
+                height: fit-content;
+                width: fit-content;
+                max-height: 350px;
+                -webkit-animation: animate 1.5s linear infinite;
+                animation: animate 1.5s linear infinite;
+            }
+
+            & img {
+                border: solid 1px white;
+            }
         }
 
         &__info {
@@ -47,15 +58,14 @@
 
             &-text {
                 text-align: left;
-                font-size: 2rem !important;
+                font-size: 1.85rem !important;
                 text-align: justify;
                 font-weight: 400;
+                margin-bottom: 20px;
 
-                @include respond(tab-port) {
-                    text-align: center;
-                }
                 @include respond(phone) {
-                    text-align: center;
+                    font-size: 1.7rem !important;
+                    font-weight: 500;
                 }
 
                 &--important {
@@ -76,5 +86,22 @@
                 }
             }
         }
+    }
+}
+
+@-webkit-keyframes animate {
+    0% {
+        box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px 20px rgba(255, 255, 255, 0);
+    }
+}
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 5px 20px rgba(255, 255, 255, 0);
     }
 }

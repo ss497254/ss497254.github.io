@@ -32,7 +32,7 @@ export default function Main() {
         <>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>ss497254 | PortFolio</title>
+                <title>ss497254 | Saurabh Singh</title>
                 <html lang="en" />
                 <meta name="description" content="Portfolio Website" />
                 <link rel="shortcut icon" href="favicon.png" />
